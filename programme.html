@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scientific programme for SDDF 2027 — 21–22 November 2027, Jeddah. Two days of gastroenterology sessions, workshops and symposia.">
+  <title>Programme | SDDF 2027</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    #prog-page { background: var(--white); }
+    .day-tabs { display: flex; border-bottom: 2px solid var(--border-light); margin-bottom: 48px; }
+    .day-tab { padding: 16px 40px; font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); background: transparent; cursor: pointer; position: relative; transition: color var(--transition); }
+    .day-tab.active { color: var(--navy); }
+    .day-tab.active::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: var(--gold); }
+    .day-panel { display: none; }
+    .day-panel.active { display: block; }
+    .sessions { display: flex; flex-direction: column; gap: 12px; }
+    .session-row { display: grid; grid-template-columns: 110px 1fr; gap: 24px; align-items: start; padding: 22px 24px; border: 1px solid var(--border-light); border-radius: var(--radius); transition: border-color var(--transition); }
+    .session-row:hover { border-color: var(--border); }
+    .session-row.highlight { background: var(--gold-pale); border-color: var(--border); }
+    .session-row.break { background: var(--cream); }
+    .s-time { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--gold); }
+    .s-type { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+    .s-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .s-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.65; }
+    .s-chair { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--gold); margin-top: 8px; }
+    .programme-note { background: var(--cream); border: 1px solid var(--border-light); border-radius: var(--radius); padding: 20px 24px; margin-top: 32px; font-size: 0.88rem; color: var(--muted); }
+    .programme-note strong { color: var(--navy); }
+    @media(max-width:600px){ .session-row{grid-template-columns:1fr;gap:8px;} .day-tab{padding:12px 20px;font-size:11px;} }
+  </style>
+</head>
+<body>
+<nav id="nav" class="solid">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></div><div class="logo-text"><strong>SDDF 2027</strong><span>Saudi Digestive Diseases Forum</span></div></a>
+    <div class="nav-links"><a href="about.html">About</a><a href="speakers.html">Speakers</a><a href="programme.html" class="active">Programme</a><a href="venue.html">Venue</a><a href="sponsors.html">Sponsors</a><a href="contact.html">Contact</a><a href="registration.html" class="btn btn-gold">Register Now</a></div>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu"><a href="about.html">About</a><a href="speakers.html">Speakers</a><a href="programme.html">Programme</a><a href="venue.html">Venue</a><a href="sponsors.html">Sponsors</a><a href="contact.html">Contact</a><a href="registration.html">Register Now</a></div>
+
+<section class="page-hero">
+  <div class="page-hero-geo"></div>
+  <div class="wrap page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Programme</span></div>
+    <span class="eyebrow eyebrow--light">Scientific Programme</span>
+    <h1>Congress Programme</h1>
+    <p>Two days of peer-reviewed plenary sessions, workshops, case discussions, and satellite symposia.</p>
+  </div>
+</section>
+
+<section id="prog-page" class="section">
+  <div class="wrap">
+    <div class="day-tabs">
+      <button class="day-tab active" onclick="showDay('day1',this)">Day 1 — 21 November</button>
+      <button class="day-tab" onclick="showDay('day2',this)">Day 2 — 22 November</button>
+    </div>
+
+    <!-- DAY 1 -->
+    <div id="day1" class="day-panel active">
+      <div class="sessions">
+        <div class="session-row break"><div class="s-time">07:30</div><div><div class="s-title">Registration &amp; Welcome Coffee</div><div class="s-type">Registration</div></div></div>
+        <div class="session-row highlight"><div class="s-time">08:30</div><div><div class="s-title">Opening Ceremony &amp; Welcome Addresses</div><div class="s-type">Plenary</div><div class="s-desc">Official opening by the Saudi Gastroenterology Association President and distinguished guests.</div></div></div>
+        <div class="session-row"><div class="s-time">09:15</div><div><div class="s-title">State of Gastroenterology in the Kingdom — 2027 Perspectives</div><div class="s-type">Plenary Keynote</div><div class="s-desc">An overview of GI disease burden, healthcare system capacity, and the research landscape in Saudi Arabia and the GCC.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row"><div class="s-time">10:00</div><div><div class="s-title">Session 1: IBD Management Revolution</div><div class="s-type">Scientific Session</div><div class="s-desc">Optimising treat-to-target strategies · Biologic sequencing and biosimilars · JAK inhibitors and S1P modulators in clinical practice · Case discussions.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row break"><div class="s-time">11:30</div><div><div class="s-title">Coffee Break &amp; Exhibition</div><div class="s-type">Break</div></div></div>
+        <div class="session-row"><div class="s-time">12:00</div><div><div class="s-title">Session 2: Hepatology &amp; MASH — Breaking the Progression</div><div class="s-type">Scientific Session</div><div class="s-desc">Non-invasive diagnostic tools for MASH · Emerging pharmacotherapies · GLP-1 receptor agonists in liver disease · NAFLD to MASH pathways in GCC populations.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row break"><div class="s-time">13:30</div><div><div class="s-title">Lunch &amp; Sponsored Symposium</div><div class="s-type">Symposium</div><div class="s-desc">Industry-supported satellite symposium. Content subject to SCFHS accreditation review.</div></div></div>
+        <div class="session-row"><div class="s-time">14:30</div><div><div class="s-title">Session 3: Advanced Endoscopy Masterclass</div><div class="s-type">Workshop / Masterclass</div><div class="s-desc">AI-assisted colonoscopy and adenoma detection · Third-space endoscopy techniques · ESD/EMR — live video demonstrations · Hands-on simulation stations.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row break"><div class="s-time">16:00</div><div><div class="s-title">Coffee Break &amp; Exhibition</div><div class="s-type">Break</div></div></div>
+        <div class="session-row"><div class="s-time">16:30</div><div><div class="s-title">Session 4: Microbiome Therapeutics — From Bench to Bedside</div><div class="s-type">Scientific Session</div><div class="s-desc">FMT protocols and expanding indications · Precision probiotics and prebiotics · Diet-microbiome interactions · Microbiome in IBD remission.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row highlight"><div class="s-time">18:00</div><div><div class="s-title">Welcome Reception</div><div class="s-type">Networking</div><div class="s-desc">Hosted welcome reception for delegates, faculty, and sponsors.</div></div></div>
+      </div>
+    </div>
+
+    <!-- DAY 2 -->
+    <div id="day2" class="day-panel">
+      <div class="sessions">
+        <div class="session-row break"><div class="s-time">08:00</div><div><div class="s-title">Morning Coffee &amp; Exhibition</div><div class="s-type">Registration</div></div></div>
+        <div class="session-row"><div class="s-time">08:30</div><div><div class="s-title">Session 5: GI Oncology — Screening to Survivorship</div><div class="s-type">Scientific Session</div><div class="s-desc">Colorectal cancer screening gaps in KSA · Early-onset CRC — epidemiology and risk factors · Multidisciplinary oncology management · Novel targeted therapies and immunotherapy in GI cancer.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row"><div class="s-time">10:00</div><div><div class="s-title">Session 6: Functional GI Disorders &amp; Motility</div><div class="s-type">Scientific Session</div><div class="s-desc">IBS — updated Rome IV criteria in clinical practice · SIBO diagnosis and management · Motility disorders and emerging therapies · Telehealth and digital monitoring in functional GI.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row break"><div class="s-time">11:30</div><div><div class="s-title">Coffee Break &amp; Exhibition</div><div class="s-type">Break</div></div></div>
+        <div class="session-row"><div class="s-time">12:00</div><div><div class="s-title">Session 7: Paediatric Gastroenterology</div><div class="s-type">Scientific Session</div><div class="s-desc">Paediatric IBD — biologics and growth optimisation · Coeliac disease in GCC children · Transition of care models · Paediatric NAFLD and obesity-related GI disease.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row break"><div class="s-time">13:30</div><div><div class="s-title">Lunch &amp; Sponsored Symposium</div><div class="s-type">Symposium</div><div class="s-desc">Industry-supported satellite symposium. Content subject to SCFHS accreditation review.</div></div></div>
+        <div class="session-row"><div class="s-time">14:30</div><div><div class="s-title">Session 8: Complex Case Conference</div><div class="s-type">Interactive Session</div><div class="s-desc">Faculty panel tackles challenging GI cases submitted by delegates. Audience polling and live discussion. Multidisciplinary team approach demonstrated.</div><div class="s-chair">Moderator: TBC</div></div></div>
+        <div class="session-row break"><div class="s-time">16:00</div><div><div class="s-title">Coffee Break</div><div class="s-type">Break</div></div></div>
+        <div class="session-row"><div class="s-time">16:30</div><div><div class="s-title">Session 9: Future Frontiers — AI, Genomics &amp; Personalised GI Medicine</div><div class="s-type">Scientific Session</div><div class="s-desc">AI in endoscopy and pathology · Pharmacogenomics in IBD and hepatology · Biomarker-driven therapy selection · The next decade in GI practice.</div><div class="s-chair">Chair: TBC</div></div></div>
+        <div class="session-row highlight"><div class="s-time">17:45</div><div><div class="s-title">Closing Ceremony &amp; CME Certificate Distribution</div><div class="s-type">Closing</div><div class="s-desc">Closing remarks by the Congress Chair. CME credits confirmed. Closing reception.</div></div></div>
+      </div>
+    </div>
+
+    <div class="programme-note">
+      <strong>Note:</strong> This is a preliminary programme outline. Session timings, topics, and faculty are subject to change as the scientific committee finalises the programme. The confirmed programme will be published in Q1 2027.
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" style="background:var(--cream)">
+  <div class="wrap">
+    <span class="eyebrow">CME Accreditation</span>
+    <h2 class="section-heading" style="max-width:600px;">Earn Recognised CME Credits</h2>
+    <div class="rule"></div>
+    <p style="color:var(--muted);max-width:640px;line-height:1.85;">SDDF 2027 is being submitted for CME accreditation through the Saudi Commission for Health Specialties (SCFHS). Credits will also be applicable through reciprocal arrangements with other GCC licensing bodies including MOH UAE, DOH Abu Dhabi, and NHRA Bahrain.</p>
+    <a href="registration.html" class="btn btn-gold mt-32">Register to Attend</a>
+  </div>
+</section>
+
+<div class="footer-gold-bar"></div>
+<footer id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg></div><div class="logo-text"><strong>SDDF 2027</strong><span>Saudi Digestive Diseases Forum</span></div></div><p>21–22 November 2027 · Jeddah, Saudi Arabia</p></div>
+      <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="about.html">About</a></li><li><a href="speakers.html">Speakers</a></li><li><a href="programme.html">Programme</a></li><li><a href="registration.html">Registration</a></li></ul></div>
+      <div class="footer-col"><h5>Information</h5><ul><li><a href="venue.html">Venue &amp; Travel</a></li><li><a href="sponsors.html">Sponsorship</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><address>Saudi Gastroenterology Association<br>Jeddah, Saudi Arabia<br><a href="mailto:info@sddf2027.com">info@sddf2027.com</a></address></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="wrap" style="width:100%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;"><span>© 2027 Saudi Digestive Diseases Forum.</span><span>Managed by Meeting Minds Experts</span></div></div>
+</footer>
+<script src="assets/js/shared.js"></script>
+<script>
+  function showDay(id, btn) {
+    document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.day-tab').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
